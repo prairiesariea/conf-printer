@@ -1,0 +1,33 @@
+default:
+    Server Alive Interval: '45'
+file sync root:
+    moon:
+        dir chroot: /tmp/moon
+        ignore list:
+        - spot
+        - x-rays
+        - radiation
+    sun:
+        dir chroot: /tmp/sun
+        ignore list:
+        - spot
+        - x-rays
+        - radiation
+misc:
+    keys location directory: ~/.ssh
+mount point:
+    host name: Canis-Major.org
+    local mount point: ~/ssh-points/Sirius@Canis-Major.org
+    port: '8822'
+    remote directory: /home/Sirius
+    user name: Sirius
+mount point "Sirius@space.org":
+    host name: space.com
+    local mount point: ~/ssh-points/Sirius@space.org
+    port: '22'
+    remote directory: /home/Sirius
+    user name: Sirius
+private keys:
+    key file name_01: private_key_common
+    key file name_02: private_key_Sirius@space.org
+    key file name_03: private_key_Betelgeuse@space.org

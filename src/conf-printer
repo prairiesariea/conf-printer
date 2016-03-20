@@ -1,0 +1,5 @@
+#!/bin/bash
+
+declare -r  thisDir="$( dirname "$( readlink -f "${0}" )" )"
+
+python "${thisDir}/conf-printer.py" print "${@}"
